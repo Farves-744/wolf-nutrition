@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/Favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
     <title>Wolf Nutrition</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="relative flex flex-col">
     <header class="bg-white z-10">
       <nav class="flex py-2 justify-between items-center ml-3 lg:ml-[3.5rem] mr-[2rem]">
-        <!-- Logo -->
+        <!--! Logo -->
         <a href="/">
-          <img class="md:mt-2 cursor-pointer ml-2 md:ml-6 lg:ml-0 logo" src="./assets/Logo.svg" alt="Logo" />
+          <img class="md:mt-2 cursor-pointer ml-2 md:ml-6 lg:ml-0 logo" src="./assets/logo.svg" alt="Logo" />
         </a>
-        <!-- Nav Menu -->
-        <div id="menu" class="nav-links text-center duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[35vh] left-0 top-[-19rem] md:w-auto w-full flex justify-center items-center px-5">
+        <!--! Nav Menu -->
+        <div id="menu" class="nav-links text-center duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex justify-center items-center px-5 z-50">
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5rem] gap-8">
-            <li class="hover-underline">
-              <a class="text-black text-[1.1rem]" href="#home">Home</a>
+            <li class="hover-underline active">
+              <a class="text-black active text-[1.1rem]" href="#home">Home</a>
             </li>
             <li class="hover-underline">
               <a class="text-black text-[1.1rem]" href="#aboutUs">About Us</a>
@@ -30,19 +30,23 @@
             <li class="hover-underline">
               <a class="text-black text-[1.1rem]" href="#contactUs">Contact Us</a>
             </li>
+            <!--! RTL Toggle -->
             <!-- <li class="mb-2 hover-underline">
               <a class="text-black text-[1.25rem]" href="#">ع</a>
             </li> -->
           </ul>
         </div>
-        <!-- Mobile Menu Toggle -->
-        <div onclick="onToggleMenu()" class="nav-mobile">
+        <!--! Mobile Menu Toggle -->
+        <div class="nav-mobile">
           <div id="nav-toggle"><span></span></div>
         </div>
+        <!-- <div onclick="onToggleMenu()" class="nav-mobile">
+          <div id="nav-toggle"><span></span></div>
+        </div> -->
       </nav>
     </header>
 
-    <!-- Home -->
+    <!--! Home -->
     <section id="home" class="bg-gradient-to-r from-[#BD6FA5] to-[#3B6AA9] lg:m-12 lg:rounded-[3rem] lg:mt-2 grid grid-cols-2 relative h-fit">
       <div class="flex flex-col items-start home-left-side">
         <h1 class="text-[#FDFB00] alfa">RISE</h1>
@@ -50,12 +54,12 @@
         <p class="text-white text-[10px] lg:text-[1.6rem] font-light">Lets get you on a journey of Health & Nutrition</p>
         <button class="bg-[#D9D9D9] mt-2 lg:mt-6 text-black border-white border lg:border-2">Download App</button>
       </div>
-      <img src="./assets/Home bg image.png" class="home-right-side absolute z-500 bottom-0 lg:rounded-[3rem]" alt="Home Image" />
+      <img src="./assets/home-bg-image.png" class="home-right-side absolute md:z-[100] bottom-0 lg:rounded-[3rem]" alt="Home Image" />
     </section>
 
-    <!-- About Us -->
+    <!--! About Us -->
     <section id="aboutUs" class="flex flex-col">
-      <!-- Download Now -->
+      <!--! Download Now -->
       <div class="grid grid-cols-2 downloads-now">
         <div class="flex flex-col gap-1 md:gap-2 downloads-now-left">
           <h3 class="font-bold">Download it for free</h3>
@@ -66,21 +70,21 @@
           <h3 class="font-bold">Available On The</h3>
 
           <div class="flex justify-start store-img items-center">
-            <img src="./assets/App store image.svg" alt="App Store" />
-            <img src="./assets/Play store image.svg" alt="Play Store" />
+            <img src="./assets/app-store-image.svg" alt="App Store" />
+            <img src="./assets/play-store-image.svg" alt="Play Store" />
           </div>
         </div>
       </div>
 
-      <!-- Why Us -->
+      <!--! Why Us -->
       <div class="flex flex-col items-center justify-center why-us text-center">
         <h2 class="font-bold">Why Us</h2>
         <p class="text-[#707070] w-[70%]">Fat loss without hunger (the ketogenic diet is not a caloric approach to weight loss) Decreased inflammation Using ketones for a new source of energy as opposed to glucose.</p>
       </div>
 
-      <!-- Build the app -->
+      <!--! Build the app -->
       <div class="flex flex-col sm:flex-row items-center justify-center build-app gap-8 lg:gap-16">
-        <img src="./assets/About us image.svg" alt="About Us" class="about-img" />
+        <img src="./assets/about-us-image.svg" alt="About Us" class="about-img" />
         <div class="flex flex-col gap-1">
           <h4 class="font-bold build-title">
             Built The App That <br class="hidden sm:block" />
@@ -96,10 +100,31 @@
       </div>
     </section>
 
-    <!-- Explore Us -->
+    <!--! Explore Us -->
     <section id="ourApp" class="bg-gradient-to-tl overflow-y-hidden from-[#800380] to-[#FDFB00] flex flex-col items-center justify-center explore-us">
       <h3 class="text-white font-semibold">Explore Us</h3>
-      <img src="./assets/Our app image.png" alt="" class="" />
+      <img src="./assets/our-app-image.png" alt="" class="" />
+    </section>
+
+    <!--! Contact Us -->
+    <section class="bg-[#F4F4F4] flex items-center justify-between contactUs">
+      <p>© 2023 Wolf Nutrition. All rights reserved</p>
+
+      <!--! Social Icons -->
+      <div class="flex items-center social-icons">
+        <a href="#">
+          <img src="./assets/twitter-icon.svg" alt="Twitter" />
+        </a>
+        <a href="#">
+          <img src="./assets/facebook-icon.svg" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="./assets/instagram-icon.svg" alt="Instagram" />
+        </a>
+        <a href="#">
+          <img src="./assets/whatsapp-icon.svg" alt="Whatsapp" />
+        </a>
+      </div>
     </section>
 
     <script src="index.js"></script>
