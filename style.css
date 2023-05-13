@@ -26,6 +26,14 @@ body {
   width: 70px;
 }
 
+.nav-links{
+  min-height: clamp(35vh, 40em, 40vh);
+}
+
+.nav-links.active{
+  top: 3rem;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-mobile {
     display: block;
@@ -85,9 +93,16 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
+  color: #000;
   background-color: #416ba9;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+.hover-underline.active {
+
+/* text-decoration: underline; */
+border-bottom: 2px solid #416ba9;
 }
 
 .hover-underline:hover::after {
@@ -201,6 +216,24 @@ h4 {
   margin-top: clamp(-1rem, -5vw, -5rem);
 }
 
+.contactUs{
+  padding-inline: clamp(1rem, 3.5vw, 3.5rem);
+  padding-block: clamp(0.6rem, 1.5vw, 1.5rem);
+
+}
+
+.contactUs p{
+  font-size: clamp(0.5rem, 1.1vw, 1.1rem);
+}
+
+.social-icons{
+  gap: clamp(.25rem, 1vw, 1rem);
+}
+
+.social-icons img{
+  width: clamp(1rem, 3vw, 3rem);
+}
+
 @media (min-width: 1629px) {
   .home-right-side {
     width: 33rem;
@@ -223,7 +256,7 @@ h4 {
   }
 
   .home-right-side {
-    width: clamp(26rem, 36vw, 36rem);
+    width: clamp(23.5rem, 35.5vw, 35.5rem);
   }
 
   .why-us {
@@ -249,3 +282,114 @@ h4 {
     padding-left: clamp(0.3rem, 2vw, 2rem);
   }
 }
+
+/* new */
+/* 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+img {
+    width: 100%;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #0b2239;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0b2239;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: 1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+} */
