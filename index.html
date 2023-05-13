@@ -8,53 +8,50 @@
     <title>Wolf Nutrition</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="relative flex flex-col">
-    <header class="bg-white z-10">
-      <nav class="flex py-2 justify-between items-center ml-3 lg:ml-[3.5rem] mr-[2rem]">
-        <!--! Logo -->
-        <a href="/">
-          <img class="md:mt-2 cursor-pointer ml-2 md:ml-6 lg:ml-0 logo" src="./assets/logo.svg" alt="Logo" />
-        </a>
-        <!--! Nav Menu -->
-        <div id="menu" class="nav-links text-center duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex justify-center items-center px-5 z-50">
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5rem] gap-8">
-            <li class="hover-underline active">
-              <a class="text-black active text-[1.1rem]" href="#home">Home</a>
-            </li>
-            <li class="hover-underline">
-              <a class="text-black text-[1.1rem]" href="#aboutUs">About Us</a>
-            </li>
-            <li class="hover-underline">
-              <a class="text-black text-[1.1rem]" href="#ourApp">Our App</a>
-            </li>
-            <li class="hover-underline">
-              <a class="text-black text-[1.1rem]" href="#contactUs">Contact Us</a>
-            </li>
-            <!--! RTL Toggle -->
-            <!-- <li class="mb-2 hover-underline">
+  <body oncontextmenu="return false" class="relative flex flex-col">
+    <nav class="flex justify-between items-center">
+      <!--! Logo -->
+      <a href="/">
+        <img class="cursor-pointer logo" src="./assets/logo.svg" alt="Logo" />
+      </a>
+      <!--! Nav Menu -->
+      <div id="menu" class="nav-links text-center duration-500 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[35vh] left-0 top-[-700%] md:w-auto w-full flex justify-center items-center z-50">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[2.5rem] gap-8">
+          <li class="hover-underline active">
+            <a class="text-black active text-[1.1rem]" href="#home">Home</a>
+          </li>
+          <li class="hover-underline">
+            <a class="text-black text-[1.1rem]" href="#aboutUs">About Us</a>
+          </li>
+          <li class="hover-underline">
+            <a class="text-black text-[1.1rem]" href="#ourApp">Our App</a>
+          </li>
+          <li class="hover-underline">
+            <a class="text-black text-[1.1rem]" href="#contactUs">Contact Us</a>
+          </li>
+          <!--! RTL Toggle -->
+          <!-- <li class="mb-2 hover-underline">
               <a class="text-black text-[1.25rem]" href="#">ع</a>
-            </li> -->
-          </ul>
-        </div>
-        <!--! Mobile Menu Toggle -->
-        <div class="nav-mobile">
-          <div id="nav-toggle"><span></span></div>
-        </div>
-        <!-- <div onclick="onToggleMenu()" class="nav-mobile">
-          <div id="nav-toggle"><span></span></div>
-        </div> -->
-      </nav>
-    </header>
+          </li> -->
+        </ul>
+      </div>
+      <!--! Mobile Menu Toggle -->
+      <div class="nav-mobile">
+        <div id="nav-toggle"><span></span></div>
+      </div>
+    </nav>
+    <!-- </header> -->
 
     <!--! Home -->
-    <section id="home" class="bg-gradient-to-r from-[#BD6FA5] to-[#3B6AA9] lg:m-12 lg:rounded-[3rem] lg:mt-2 grid grid-cols-2 relative h-fit">
-      <div class="flex flex-col items-start home-left-side">
+    <section id="home" class="bg-gradient-to-r from-[#BD6FA5] to-[#3B6AA9] lg:m-12 lg:rounded-[3rem] grid grid-cols-2 relative h-fit -z-20">
+      <div class="flex flex-col items-start home-left-side lg:mb-[4rem]">
         <h1 class="text-[#FDFB00] alfa">RISE</h1>
         <h2 class="alfa text-white -mt-2 sm:-mt-4 md:-mt-6 lg:-mt-10">ABOVE<br />YOURSELF</h2>
         <p class="text-white text-[10px] lg:text-[1.6rem] font-light">Lets get you on a journey of Health & Nutrition</p>
-        <button class="bg-[#D9D9D9] mt-2 lg:mt-6 text-black border-white border lg:border-2">Download App</button>
+        <button class="bg-[#D9D9D9] mt-2 hover:bg-black cursor-pointer lg:mt-6 text-black border-white border lg:border-2">Download App</button>
       </div>
-      <img src="./assets/home-bg-image.png" class="home-right-side absolute md:z-[100] bottom-0 lg:rounded-[3rem]" alt="Home Image" />
+
+      <img src="./assets/home-bg-image.png" class="home-right-side absolute bottom-0 lg:rounded-[3rem]" alt="Home Image" />
     </section>
 
     <!--! About Us -->
@@ -126,7 +123,6 @@
         </a>
       </div>
     </section>
-
     <script src="index.js"></script>
   </body>
 </html>
