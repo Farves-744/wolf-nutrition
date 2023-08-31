@@ -22,7 +22,7 @@ img {
 
 html {
   scroll-behavior: smooth;
-  /* user-select: none; */
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -180,7 +180,7 @@ nav {
   padding-top: clamp(0rem, 1vw, 1rem);
 }
 
-.home-left-side > h1 {
+.home-left-side>h1 {
   font-size: clamp(1.9rem, 10vw, 10rem);
 }
 
@@ -192,7 +192,7 @@ nav {
   font-size: clamp(0.5rem, 1.6vw, 1.6rem);
 }
 
-.home-left-side button {
+.home-left-side a {
   padding-inline: clamp(1rem, 3vw, 3rem);
   padding-block: clamp(0.3rem, 1vw, 1rem);
   font-size: clamp(0.6rem, 1.5vw, 1.5rem);
@@ -228,11 +228,11 @@ nav {
   font-size: clamp(0.5rem, 1.1vw, 1.1rem);
 }
 
-.downloads-now-right img:first-of-type {
+.downloads-now-right a:first-of-type {
   width: clamp(4rem, 12vw, 12rem);
 }
 
-.downloads-now-right img:last-of-type {
+.downloads-now-right a:last-of-type {
   width: clamp(4.6rem, 13.5vw, 13.5rem);
 }
 
@@ -278,7 +278,7 @@ h4 {
   font-size: clamp(0.8rem, 2.5vw, 2.5rem);
 }
 
-.explore-us img {
+.explore-img {
   width: clamp(13rem, 63vw, 63rem);
   margin-top: clamp(-1rem, -5vw, -5rem);
 }
@@ -288,7 +288,8 @@ h4 {
   padding-block: clamp(0.6rem, 1.5vw, 1.5rem);
 }
 
-.contactUs p {
+.contactUs p,
+.contactUs a {
   font-size: clamp(0.5rem, 1.1vw, 1.1rem);
 }
 
@@ -296,9 +297,23 @@ h4 {
   gap: clamp(0.25rem, 1vw, 1rem);
 }
 
+.explore-ing-container {
+  gap: clamp(0.25rem, 1vw, 1rem);
+  top: clamp(2.5rem, 10vw, 10rem);
+}
+
 .social-icons img {
   width: clamp(1rem, 3vw, 3rem);
 }
+
+.app-img {
+  width: clamp(2rem, 14vw, 14rem);
+}
+
+.play-img {
+  width: clamp(2.72rem, 15.5vw, 15.5rem);
+}
+
 
 @media (min-width: 1629px) {
   .home-right-side {
@@ -355,6 +370,7 @@ h4 {
   h4 {
     padding-left: clamp(0.3rem, 2vw, 2rem);
   }
+
   [dir="rtl"] .build-app p,
   h4 {
     padding-right: clamp(0.3rem, 2vw, 2rem);

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite --host 192.168.1.41",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",

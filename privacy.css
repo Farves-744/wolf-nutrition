@@ -1,0 +1,19 @@
+#privacy-policy {
+    padding: 1rem;
+}
+
+#privacy-policy>p:first-child {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+#terms-and-conditions {
+    padding: 1rem;
+}
+
+#terms-and-conditions>p:first-child {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+}
